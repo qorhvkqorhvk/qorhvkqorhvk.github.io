@@ -3,19 +3,16 @@
  <head>
   <link rel="stylesheet" type="text/css" href="css@.css">
   <style>
-    .menu {
-        margin-left: 320px;
-    }
-    .bgc {
-        background-color: #ededed;
-    }
-    #title img, .menu img {
+.menu{margin-left:320px;}
+.bgc{background-color:#ededed}
+	   #title img {
         max-width: 100%;
         height: auto;
     }
     @media screen and (max-width: 768px) {
         .menu {
-            margin-left: 0;
+            margin-left: 5%;
+            margin-right: 5%;
         }
     }
   </style>
@@ -23,71 +20,150 @@
  <body>
  <div class="total">
   <div id="title" style="text-align:center;">
-	<a href="index.html"> <img src="./img/topic3.PNG" alt="Software Centric World"></a>
+	<a href="index.html"> <img src="./img/topic3.PNG"></a>
   </div><br><br>
  
-  <div class="middle">
-    <div class="bgc">
-    	<div class="menu">
-            <br>
-            <h2>6. What's the color of this code(HTML)? #00ff00</h2>
-            <input type="radio" name="Cnswer" id="D1"> Red<br>
-            <input type="radio" name="Cnswer" id="D2"> Blue<br>
-            <input type="radio" name="Cnswer" id="D3"> Green<br>
-            <input type="radio" name="Cnswer" id="D4"> Black<br>
-            <h2>7. What is the code for printing &?</h2>
-            <input type="radio" name="dnswer" id="E1">&amp;amp;<br>
-            <input type="radio" name="dnswer" id="E2">&amp;nbsp;<br>
-            <input type="radio" name="dnswer" id="E3">&amp;quot;<br>
-            <input type="radio" name="dnswer" id="E4">&amp;lt;<br>
-            <h2>8. Which of the codes for creating the following picture is correct?(omit script tag)</h2>
-            <input type="radio" name="Dnswer" id="e1">
-            for(var i=0;i<5;i++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
-            &nbsp;&nbsp; }<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
-            &nbsp;&nbsp;}<br><br><br>
-            <input type="radio" name="Dnswer" id="e2">for(var i=0;i<6;i++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
-            &nbsp;&nbsp; }<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
-            &nbsp;&nbsp;}<br><br><br>
-            <input type="radio" name="Dnswer" id="e3">for(var i=0;i<5;i++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
-            &nbsp;&nbsp; }<br>
-            &nbsp;&nbsp;}<br><br><br>
-            <input type="radio" name="Dnswer" id="e4">for(var i=0;i<6;i++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
-            &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
-            &nbsp;&nbsp; }<br>
-            &nbsp;&nbsp;}<br><br><br>
-            <h2>9. What code should you write to print out the natural log of 10?</h2>
-            <input type="radio" name="Enswer" id="J1"> Math.LOG10E<br>
-            <input type="radio" name="Enswer" id="J2"> Math.LN10<br>
-            <input type="radio" name="Enswer" id="J3"> Math.LN2<br>
-            <input type="radio" name="Enswer" id="J4"> Math.LN10E<br>
-        </div>
-    </div>
-    <div style="text-align:right">
-        <a href="3codingtest.html">preview</a>
-    </div>
-  </div>
- </div>
- <div style="text-align:right" class="bottom">
-    <p>Software Centric World<br>Web-Programming</p>
- </div>
+  <div class="middle"><div class="bgc">
+	<div class="menu"><br>
+<h2>6.What's the color of this code(HTML)? #00ff00</h2>
+<input type="radio" name="Cnswer" id="D1">Red<br>
+<input type="radio" name="Cnswer" id="D2">Blue<br>
+<input type="radio" name="Cnswer" id="D3">Green<br>
+<input type="radio" name="Cnswer" id="D4">Black
+<h2>7.What is the code for printing &?</h2>
+<input type="radio" name="dnswer" id="E1">&amp;amp;<br>
+<input type="radio" name="dnswer" id="E2">&amp;nbsp;<br>
+<input type="radio" name="dnswer" id="E3">&amp;quot;<br>
+<input type="radio" name="dnswer" id="E4">&amp;lt;
+<h2>8.Which of the codes for creating the following picture is correct?(omit script tag)</h2>
+<script>
+  for(var i=0;i<5;i++)
+  {
+     for(var j=0;j<=i;j++)
+     {
+       document.write("*");
+     }
+   document.write("<br>");
+  }
+  </script>
+<input type="radio" name="Dnswer" id="e1">
+for(var i=0;i<5;i++)<br>
+  &nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
+&nbsp;  {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
+&nbsp;  }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
+&nbsp;&nbsp;}<br><br><br>
+<input type="radio" name="Dnswer" id="e2">for(var i=0;i<6;i++)<br>
+  &nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
+&nbsp;  {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
+&nbsp;  }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
+&nbsp;&nbsp;}<br><br><br>
+<input type="radio" name="Dnswer" id="e3">for(var i=0;i<5;i++)<br>
+  &nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
+&nbsp;  {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
+&nbsp;  }<br>
+&nbsp;&nbsp;}<br><br><br>
+<input type="radio" name="Dnswer" id="e4">for(var i=0;i<6;i++)<br>
+  &nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  for(var j=0;j<=i;j++)<br>
+&nbsp;  {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    document.write("*");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&lt;br&gt;");<br>
+&nbsp;  }<br>
+&nbsp;&nbsp;}<br><br><br>
+<h2>9.What code should you write to print out the natural log of 10?</h2>
+<input type="radio" name="Enswer" id="J1">Math.LOG10E<br>
+<input type="radio" name="Enswer" id="J2">Math.LN10<br>
+<input type="radio" name="Enswer" id="J3">Math.LN2<br>
+<input type="radio" name="Enswer" id="J4">Math.LN10E
+<br>
+<script>
+var A=document.getElementById("D1");
+A.onclick=function A(){
+alert("Think again");
+}
+var B=document.getElementById("D2");
+B.onclick=function A(){
+alert("Think again");
+}
+var C=document.getElementById("D3");
+C.onclick=function A(){
+alert("that's right");
+}
+var D=document.getElementById("D4");
+D.onclick=function A(){
+alert("Think again");
+}
+var E=document.getElementById("E1");
+E.onclick=function A(){
+alert("that's right");
+}
+var F=document.getElementById("E2");
+F.onclick=function A(){
+alert("Think again");
+}
+var G=document.getElementById("E3");
+G.onclick=function A(){
+alert("Think again");
+}
+var H=document.getElementById("E4");
+H.onclick=function A(){
+alert("Think again");
+}
+var I=document.getElementById("e1");
+I.onclick=function A(){
+alert("That's right");
+}
+var J=document.getElementById("e2");
+J.onclick=function A(){
+alert("Think again");
+}
+var K=document.getElementById("e3");
+K.onclick=function A(){
+alert("Think again");
+}
+var L=document.getElementById("e4");
+L.onclick=function A(){
+alert("Think again");
+}
+var M=document.getElementById("J1");
+M.onclick=function A(){
+alert("Think again");
+}
+var N=document.getElementById("J2");
+N.onclick=function A(){
+alert("that's right");
+}
+var O=document.getElementById("J3");
+O.onclick=function A(){
+alert("Think again");
+}
+var P=document.getElementById("J4");
+P.onclick=function A(){
+alert("Think again");
+}
+
+
+
+
+
+</script>
+
+<div style="text-align:right">
+<a href="3codingtest.html">preview</a>
+</div>
+  </div></div></div>
+ 
+	<div style="text-align:right" class="bottom">
+	<p>Software Centric World<br>Web-Programming</a>
+	</div>
  </body>
 </html>
