@@ -1,86 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="css@.css">
-  <style>
-    
-    .total {
-      max-width: 100%;
-      overflow: hidden;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    
-    .middle {
-      background-color: #ededed;
-      overflow: hidden;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    
-    .menu, .contents {
-      width: 100%;
-      float: none;
-      box-sizing: border-box;
-    }
-    
-    .bottom {
-      text-align: right;
-      clear: both;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    
-    @media only screen and (min-width: 600px) {
-      .menu {
-        float: left;
-        width: 50%;
-        height: 400px;
-        overflow: auto;
-      }
-      
-      .contents {
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Centric World</title>
+  <style type="text/css">
+    .w {
         float: right;
-        width: 50%;
+        width: 400px;
         height: 400px;
         overflow: auto;
-      }
+    }
+    .r {
+        float: left;
+        width: 400px;
+        height: 400px;
+        overflow: auto;
+    }
+    .middle {
+        background-color: #ededed;
+    }
+    @media screen and (max-width: 768px) {
+        .w, .r {
+            float: none;
+            width: auto;
+            height: auto;
+            overflow: auto;
+            margin: 0 auto;
+        }
     }
   </style>
-</head>
-<body>
-  <div class="total">
-    <div id="title" style="text-align:center;">
-      <a href="index.html"> <img src="./img/topic2.PNG"> </a>
-    </div><br><br>
-  
-    <div class="middle">
-      <div class="menu">
-      </div>
-      <div class="contents">
-          <hr>
-          <div>
-        <ul><h1><b>SW 산업의 상위 10개 이슈 중 3가지</b></h1>
-          <li><a href="5번.html" target="_blank"><p>No.1</p></a></li>
-          <li><a href="6번.html" target="_blank"><p>No.2</p></a></li>
-          <li><a href="7번.html" target="_blank"><p>No.3</p></a></li>
-        </ul>
-      </div>
-      <div>
-      <ul><h1><b>소프트웨어 관련 인물</b></h1>
-        <li><a href="2번.html" target="_blank">찰스 배비지</a></li>
-        <li><a href="3번.html" target="_blank">에이다 로벌레이스</a></li>
-        <li><a href="4번.html" target="_blank">존 폰 노이만</a></li>
-      </ul>
-      </div>
-      <hr>
-    </div>
-  </div>
-  </div>
-  
-    <div style="text-align:right" class="bottom">
-    <p>소프트웨어 중심 세상<br>웹 프로그래밍</p>
-    </div>
- </body>
-</html>
+ </head>
+ <body>
+ <div class="total">
+  <div id="title" style="text-align:center;">
+	 <a href="index.html"><img src="./img/topic2.PNG" alt="Software Centric World"></a>
+  </div><br><br>
+ 
+  <div class="middle">
+	<div class="menu">
+	</div>
+	<div class="contents">
+		<hr>
+		<div>
+			<ul><h1><b>Three of the top 10 SW industry issues</b></h1>
+				<li><a href="5번.html" target="_blank"><p>No.1</p></a></li>
+				<li><a href="6번.html" target="_blank"><p>NO.2</p></a></li>
+				<li><a href="7번.html" target="_blank"><p>NO.3</p></a></li>
+			</ul>
+		</div>
+		<div>
+			<ul><h1><b>Software-Related Personality</b></h1>
+				<li><a href="2번.html" target="_blank">Charles Babbage</a></li>
+				<li><a href="3번.html" target="_blank">Augusta Ada King</a></li>
+                <li><a href="4번.html" target="_blank">John von Neumann</a></li>
+              </ul>
+                </div>
+                <hr>
+             </div>
+           </div>
+           </div>
+          
+             <div style="text-align:right" class="bottom">
+             <p>Software Centric World<br>Web-Programming</p>
+             </div>
+           </body>
+          </html>
 
