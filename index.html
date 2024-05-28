@@ -6,7 +6,6 @@
     <title>Software Centric World</title>
     <link rel="stylesheet" type="text/css" href="css@.css">
     <style>
-        /* 추가된 CSS 스타일 */
         .total {
             max-width: 1200px;
             margin: 0 auto;
@@ -19,16 +18,19 @@
             margin-bottom: 40px;
         }
         .left, .right {
-            flex: 1 1 45%; /* 기본적으로 반씩 차지하되, 작은 화면에서는 100%로 변경 */
+            flex: 1 1 45%;
             margin-bottom: 20px;
         }
-        .left img, .right img {
-            width: 100%; /* 이미지가 컨테이너에 맞게 조절되도록 */
+        .left img, .right img, #title img {
+            max-width: 100%;
             height: auto;
         }
         @media screen and (max-width: 768px) {
             .left, .right {
                 flex-basis: 100%;
+            }
+            #programming table {
+                width: 100%;
             }
         }
     </style>
@@ -37,11 +39,11 @@
 <body>
 <div class="total">
     <div id="title" style="text-align:center;">
-        <img src="./img/title.PNG">
+        <img src="./img/title.PNG" alt="Software Centric World Title">
     </div><br><br>
 
     <h2 align="center">Programming Languages</h2>
-    <div id="programming" >
+    <div id="programming">
         <center>
             <table cellpadding="15" width="70%">
                 <tr>
@@ -58,13 +60,13 @@
         <div class="left" style="display:inline-block">
             <h2 class="topic" align="center">About Software</h2>
             <h3 align="center">What is Software?<br>Click here!▼</h3>
-            <a href="1about.html"><img src="./img/image1.PNG"></a>
+            <a href="1about.html"><img src="./img/image1.PNG" alt="About Software"></a>
         </div>
 
         <div class="right" style="display:inline-block">
             <h2 class="topic" align="center">Relative Techniques</h2>
             <h3 align="center">Want to know about the relative techniques?<br>Click here!▼</h3>
-            <a href="2techniques.html"><img src="./img/image2.PNG"></a>
+            <a href="2techniques.html"><img src="./img/image2.PNG" alt="Relative Techniques"></a>
         </div>
     </div>
 
@@ -74,19 +76,19 @@
         <div class="left" style="display:inline-block">
             <h2 class="topic" align="center">Coding Test</h2>
             <h3 align="center">Test your skills!<br>Click here!▼</h3>
-            <a href="3codingtest.html"><img src="./img/image3.PNG"></a>
+            <a href="3codingtest.html"><img src="./img/image3.PNG" alt="Coding Test"></a>
         </div>
 
         <div class="right" style="display:inline-block">
             <h2 class="topic" align="center">Contest Exhibit</h2>
             <h3 align="center">Don't forget the contest!<br>Click here!▼</h3>
-            <a href="4contest.html"><img src="./img/image4.PNG"></a>
+            <a href="4contest.html"><img src="./img/image4.PNG" alt="Contest Exhibit"></a>
         </div>
     </div>
     <br><br><br>
 </div>
 <div style="text-align:right" class="bottom">
-    <p>Software Centric World<br>Web-Programming</a>
+    <p>Software Centric World<br>Web-Programming</p>
 </div>
 </body>
 </html>
